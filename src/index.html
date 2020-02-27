@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1">   
+        <link href="./css/index.css" type="text/css" rel="stylesheet">
+        <title>SampleLayout using html and css</title>
+    </head>
+    <body>
+        <div class="container">
+            <form action="/action_page.php">
+              <label for="name">Your Name</label>
+              <input type="text" id="name" name="name" placeholder="Type here">
+          
+              <label for="email">Email Address</label>
+              <input type="text" id="email" name="email" placeholder="you@yoursite.com">
+          
+              <label for="company">Company Size</label>
+              <select id="company" name="company">
+                <option value="1-50">1-50</option>
+                <option value="50-500">50-500</option>
+                <option value="500+">500+</option>
+              </select>
+
+              <label for="budget">Approximate Budget</label>
+              <select id="budget" name="budget">
+                <option value="1-50">Up to $10k</option>
+                <option value="50-500">$10k-$50k</option>
+                <option value="500+">Over $50k</option>
+              </select>
+            
+              <input type="submit" value="Submit">
+            </form>
+          </div>
+    </body>
+</html>
