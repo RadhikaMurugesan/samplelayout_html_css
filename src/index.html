@@ -11,27 +11,11 @@
         
        <div class="navbar-container">
         <div class="demo-name">Jumpstart</div>
-        <div class="menu">
-          <div class="dropdown">
-            <button class="dropbtn">Demo
-              <i class="fa fa-caret-down"></i>
-            </button>            
-          </div>
-          <div class="dropdown">
-            <button class="dropbtn">Pages
-              <i class="fa fa-caret-down"></i>
-            </button>
-          </div>
-          <div class="dropdown">
-            <button class="dropbtn">Features
-              <i class="fa fa-caret-down"></i>
-            </button>
-          </div>
-          <div class="dropdown">
-            <button class="dropbtn">Support
-              <i class="fa fa-caret-down"></i>
-            </button>
-          </div>
+        <div class="topnav" id="myTopnav">
+          <a href="#home">Demo <span><i class="fa fa-caret-down"></i></span></a>
+          <a href="#news">Pages <span><i class="fa fa-caret-down"></i></span></a>
+          <a href="#contact">Features <span><i class="fa fa-caret-down"></i></span></a>
+          <a href="#about">Support <span><i class="fa fa-caret-down"></i></span></a>
           <a href="javascript:void(0);" class="icon" onclick="myFunction()">
             <i class="fa fa-bars"></i>
           </a>
@@ -44,7 +28,7 @@
               <h1 class="quotes-big">Build fast, launch quickly.
               </h1>
               <p class="quotes-small">Launch your Saas in style with this suite of carefuly crafted pages and components.</p>
-              <div class="btn"><i class="fa fa-home"></i> Fully Responsible</div>
+              <div class="btn"><i class="fa fa-exchange"></i> Fully Responsible</div>
               <div class="btn"><i class="fa fa-bars"></i> Multiple Layouts</div>
         
             </div>
@@ -82,5 +66,15 @@
         
 
        </div>
-    </body>
+       <script>
+        function myFunction() {
+          var x = document.getElementById("responsive-menu");
+          if (x.className === "menu") {
+            x.className += " responsive";
+          } else {
+            x.className = "menu";
+          }
+        }
+        </script>
+      </body>
 </html>
